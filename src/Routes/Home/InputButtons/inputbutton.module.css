@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: min(600px,85vw);
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid rgb(182, 181, 181);
+}
+.main input{
+    font-size: 18px;
+    width: 12.5%;
+    
+}
+.main button{
+    background-color: rgb(47, 231, 255);
+    border: 0px solid black;
+    border-radius: 5px;
+    font-weight: 450;
+    padding: 0px 10px;
+}
