@@ -1,6 +1,7 @@
 :root{
     --bg-color:white;
 }
+
 .main{
     background-color:var(--bg-color);
     width: 100vw; 
