@@ -1,3 +1,15 @@
 .main{
-    background-color: beige;
+    height: 300px;
+    width: 96%;
+    margin: auto;
+    background-color: rgb(252, 252, 252);
+    border: 0.2px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.outlet{
+    margin-top: 10px;
+    
 }

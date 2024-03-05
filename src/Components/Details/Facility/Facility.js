@@ -5,7 +5,9 @@ export default function Facility(){
     return(
         <div className={style.main}>
             <DeatilNavBar></DeatilNavBar>
-            <Outlet></Outlet>
+            <div className={style.outlet}>
+                <Outlet></Outlet>
+            </div>
         </div>
     )
 }

@@ -61,3 +61,30 @@
     transition: all 0.1s linear;
     width: 40px;
 }
+.innerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.divs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.loading{
+    
+    position: relative;
+}
+.loading:active{
+    background-color: rgb(139, 139, 139);
+}
+.loading::before{
+    content: 'Loading...';
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+}
