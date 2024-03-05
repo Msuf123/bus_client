@@ -1,0 +1,27 @@
+:root{
+    --button-color:rgb(131, 131, 231);
+    --button-text-color:rgb(78, 78, 219);
+}
+.main{
+    
+    width: max-content;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.main button{
+    font-size: 21px;
+    background-color: transparent;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: var(--button-text-color);
+    border: 1px solid var(--button-color);
+    transition: all 0.2s linear;
+}
+.main button:hover{
+    background-color: var(--button-color);
+    color: black;
+}

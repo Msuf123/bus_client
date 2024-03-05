@@ -1,5 +1,5 @@
 .main{
-    border: 2px solid black;
+    
     display:grid;
     grid-template-rows: max-content 1fr 1fr 1fr;
   
