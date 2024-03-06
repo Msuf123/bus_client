@@ -8,6 +8,7 @@ import BusFacility from './Components/Details/BusFacility/BusFacility';
 import BusImages from './Components/Details/BusImages/BusImages';
 import Register from './Routes/Register/Register';
 import TokenVerify from './Routes/TokenVerify/tokenVerify';
+import SeatBook from './Routes/SeatBook/SeatBook';
 
 function App() {
   const router=createBrowserRouter(createRoutesFromElements(
@@ -19,6 +20,7 @@ function App() {
         <Route index element={<BusFacility></BusFacility>}></Route>
         <Route path='images' element={<BusImages></BusImages>}></Route>
       </Route>
+      <Route path='/seatSelection/:id' element={<SeatBook></SeatBook>}></Route>
     </Route>
   ))
   return (

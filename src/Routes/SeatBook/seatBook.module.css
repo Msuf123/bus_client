@@ -1,0 +1,11 @@
+.main{
+
+height: 100vh;
+display: block;
+
+}
+.main h1{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+}
