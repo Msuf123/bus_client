@@ -1,0 +1,24 @@
+.main{
+    background-color: transparent;
+    border: 0.5px solid rgb(34, 245, 34);
+    position: relative;
+    top: -35px;
+    left: -11px;
+    width: 40px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main::after{
+    content: '';
+    background-color: rgb(60, 160, 21);
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    right: 15px;
+    bottom: -6px;
+}
+.main span{
+    font-size: 16px;
+}
