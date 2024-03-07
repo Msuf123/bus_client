@@ -1,16 +1,22 @@
+:root{
+    --seat-color:rgb(209, 209, 211);
+    --seat-border-color:black;
+    --seat-color-head-rest:rgb(175, 175, 177);
+}
 .main{
-    background-color: rgb(134, 134, 252);
+    background-color: var(--seat-color);
     width: 20px;
+   border: 0.2px solid var(--seat-border-color);
     height: 25px;
     position: relative;
-    border-radius: 2;
+    border-radius: 5px;
 }
 .main::after{
     content:'';
     position: absolute;
-    background-color: rgb(134, 134, 252);
+    background-color: var(--seat-color-head-rest);
     top: 2px;
-    border: 2px solid rgb(57, 57, 90);
+    border: 0.1px solid rgb(57, 57, 90);
     bottom: 2px;
     right: -2px;
     width: 8px;

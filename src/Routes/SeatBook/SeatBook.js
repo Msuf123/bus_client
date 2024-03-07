@@ -6,6 +6,7 @@ export default function SeatBook(){
             <h1>Select Your Seat</h1>
             <span>Bus Type:Standard</span>
             <BusSeatDiagram></BusSeatDiagram>
+            <button>Confirm</button>
         </div>
     )
 }
