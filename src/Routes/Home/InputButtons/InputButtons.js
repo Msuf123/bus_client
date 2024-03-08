@@ -8,7 +8,7 @@ export default function InputButtons(){
         <div className={style.main}>
             <input></input>
             <input></input>
-            <input></input>
+            <input type='date'></input>
             <button>Search</button>
         </div>
     )

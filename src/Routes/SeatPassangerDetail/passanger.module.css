@@ -1,0 +1,22 @@
+.main{
+    
+    display: grid;
+    grid-template-rows: max-content max-content  1fr 0.41fr;
+    
+}
+.main h1{
+    text-align: center;
+}
+.number{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.main .next{
+    margin-top: 50px;
+    width: max-content;
+    align-self: center;
+    justify-self: center;
+}
