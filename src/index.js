@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import BusinessRegisterBarSlice from './Components/BusinessRegister/BusinessProgressBarSlice/BusinessRegisterBarSlice';
+import BusinessProgressRegisterButtonSlice from './Components/BusinessRegister/BusinessProgressRegisterButton/BusinessProgressRegisterButtonSlice';
 import { Provider } from 'react-redux';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const store=configureStore({reducer:{businessRegisterProgressBar:BusinessRegisterBarSlice}})
+const store=configureStore({reducer:{businessRegisterProgressBar:BusinessRegisterBarSlice,businessRegisterProgressButtonUrl:BusinessProgressRegisterButtonSlice}})
 root.render(
   <Provider store={store}>
     <App />
