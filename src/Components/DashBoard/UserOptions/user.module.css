@@ -25,7 +25,7 @@
 .main a :visited{
     color: black;
 }
-.uppreOptions{
+.options{
  display: flex;
  flex-direction: column;
 }

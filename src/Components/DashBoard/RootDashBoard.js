@@ -4,7 +4,7 @@ import style from './root.module.css'
 export default function RootDashBoard(){
     return(
         <div className={style.main}>
-            <DashBoardLeftComponent isUser={true}></DashBoardLeftComponent>
+            <DashBoardLeftComponent isUser={false}></DashBoardLeftComponent>
             <div className={style.mainOutlet}>
              <Outlet></Outlet>
             </div>

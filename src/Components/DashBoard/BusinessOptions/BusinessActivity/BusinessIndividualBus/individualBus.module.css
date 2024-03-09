@@ -1,0 +1,83 @@
+.main{
+    height: 250px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 5px var(--box-shadow-color);
+    transition: all 0.1s linear;
+}
+.main:hover{
+    transform: scale(1.03);
+}
+.main img{
+    width: 300px;
+    border-radius: 5px;
+}
+.main .plateNo{
+    font-size: 18px;
+    display: block;
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--button-text-color);
+
+
+}
+.main .plateNoDiv :nth-child(2){
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.plateNoDiv{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.destinationPoints{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.staticLocation{
+    font-size: 18px;
+    display: block;
+  font-weight: 600;
+  
+  color: var(--button-text-color);
+}
+.staticLocationOuterDiv{
+    display: flex;
+    align-items: center;
+    
+}
+.dynamicLoaction{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+.status{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: 800;
+}
+.statusDiv{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(9, 172, 9);
+
+}
+
+.symbol{
+    margin-left: 6px ;
+    position: relative;
+    top: 3px;
+    background-color: rgb(28, 250, 28);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+}

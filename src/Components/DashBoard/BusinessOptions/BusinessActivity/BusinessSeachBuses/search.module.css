@@ -1,0 +1,92 @@
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .firstSearch{
+    
+    padding: 5px;
+    width: 500px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.main .firstSearch input{
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-bottom: 2px solid var(--button-color);
+    
+    border-radius: 0px;
+    
+   
+    
+}
+.main .firstSearch input:focus{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}
+.main .firstSearch input:first-child{
+    margin-right: 25px;
+}
+.main .firstSearch img{
+ display: block;
+ position: absolute;
+ left: 211px;
+ background-color: white;
+ border-radius: 100%;
+transform: scale(1.29) rotate(-10deg);
+ border: 0.5px solid black;
+ width: 26px;
+}
+.main .firstSearch button{
+    border: 2px solid var(--button-color);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    transition: all 0.1s linear;
+}
+.main .firstSearch button:hover{
+    background-color: transparent;
+    color: var(--button-text-color);
+}
+.orText{
+    font-size: 29px;
+    font-weight: 600;
+}
+.main .extraSearch{
+   
+   width: 300px;
+   display: flex;
+   
+   justify-content: space-around;
+}
+.main .extraSearch input{
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-bottom: 2px solid var(--button-color);
+    
+    border-radius: 0px;
+    
+}
+.main .extraSearch input:focus{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}
+.main .extraSearch button{
+    border: 2px solid var(--button-color);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    transition: all 0.1s linear;
+}
+.main .extraSearch button:hover{
+    background-color: transparent;
+    color: var(--button-text-color);
+}

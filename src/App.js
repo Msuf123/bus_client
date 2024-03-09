@@ -16,6 +16,7 @@ import QuestionTwo from './Routes/BusinessRegister/Questions/Question2/QuestionT
 import QuestionThree from './Routes/BusinessRegister/Questions/Question3/QuestionThree';
 import QuestionFour from './Routes/BusinessRegister/Questions/Question4/Questionfour';
 import DashBoard from './Routes/DashBoard/DashBoard';
+import BusinessActivity from './Components/DashBoard/BusinessOptions/BusinessActivity/BusinessActivity';
 
 function App() {
   const router=createBrowserRouter(createRoutesFromElements(
@@ -32,7 +33,11 @@ function App() {
         <Route index element={<BusFacility></BusFacility>}></Route>
         <Route path='images' element={<BusImages></BusImages>}></Route>
       </Route>
-      <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
+      <Route path='/dashboard' element={<DashBoard></DashBoard>}>
+        <Route path='businessActivity' element={<BusinessActivity></BusinessActivity>}>
+          
+        </Route>
+      </Route>
       <Route path='/seatBook/seatSelection/:id' element={<SeatBook></SeatBook>}></Route>
       <Route path='/seatBook/passengerDetails' element={<PassengerSeatBook></PassengerSeatBook>}></Route>
     </Route>
