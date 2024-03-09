@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const BusinessProgressRegisterButtonSlice=createSlice({
     name:'BusinessRegisterButoonNextUrl',
-    initialState:'/questionTwo',
+    initialState:'questionTwo',
     reducers:{
         nextUrl:(state,action)=>{
             return action.payload
@@ -10,3 +10,4 @@ const BusinessProgressRegisterButtonSlice=createSlice({
     }
 })
 export default BusinessProgressRegisterButtonSlice.reducer
+export const{nextUrl}=BusinessProgressRegisterButtonSlice.actions

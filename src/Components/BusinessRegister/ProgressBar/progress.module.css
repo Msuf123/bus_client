@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .progress{
-    background-color: rgb(57, 160, 201);
+    background-color: var(--button-color);
     
     height: 100%;
 }

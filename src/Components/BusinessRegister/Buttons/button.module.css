@@ -1,0 +1,21 @@
+.main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .main button{
+        font-size: 21px;
+        background-color: transparent;
+        padding: 10px 40px;
+        border-radius: 20px;
+        font-weight: 700;
+        color: var(--button-text-color);
+        border: 3px solid var(--button-color);
+        transition: all 0.2s linear;
+    }
+    .main button:hover{
+        background-color: var(--button-color);
+        color: black;
+    }

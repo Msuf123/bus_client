@@ -1,0 +1,29 @@
+.main{
+    
+    display: grid;
+    grid-template-rows: max-content max-content 1fr 0.2fr;
+    height: 100vh;
+}
+.main h1{
+    text-align: center;
+}
+.main input{
+    
+        border: 2px solid transparent;
+        padding: 5px;
+        background-color: transparent;
+        border-bottom: 2px solid var(--button-color);
+        font-size: 28px;
+        border-radius: 2px;
+        width: 300px;
+    
+}
+.main input:active{
+    outline: 0px solid red;
+    
+}
+.main input:focus{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}

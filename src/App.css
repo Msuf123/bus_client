@@ -1,3 +1,10 @@
+:root{
+  --box-shadow-color:rgba(8, 8, 8, 0.158);
+  --button-color:rgb(131, 131, 231);
+    --button-text-color:rgb(78, 78, 219);
+    --red-button-border:1px solid red;
+    --red-button-color:red;
+}
 .App {
   text-align: center;
 }
