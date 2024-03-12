@@ -1,0 +1,44 @@
+.main{
+    box-shadow: 0px 0px 4px 4px var(--light-box-shadow-color);
+    border-radius: 15px;
+    width: clamp(250px,90%,900px);
+    height: 90%;
+    margin: 0px auto;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto;
+    grid-auto-flow: row;
+}
+
+.main img{
+    border-radius: 10px;
+    width: min(300px,90%);
+    
+    justify-self: center;
+    align-self: center;
+}
+.emptyImageHolder{
+    
+    width: 150px;
+    border: 2px dashed var(--button-color);
+    border-radius: 5px;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emptyImageHolder img{
+    width: 40px;
+    height: 40px;
+
+}
+@media only screen and (max-width:992px) {
+    .emptyImageHolder {
+        width:50px;
+        height: 50px;
+    }
+}

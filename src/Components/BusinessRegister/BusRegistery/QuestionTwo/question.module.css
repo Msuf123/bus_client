@@ -1,0 +1,25 @@
+.main{
+   
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
+}
+@media  only screen and (max-width:958px) {
+  
+}
+.inputs{
+    justify-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0px 0% 6vw;
+}
+.inputs span{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 50px 10px;
+}
+.inputs input{
+    font-size: 16px;
+}

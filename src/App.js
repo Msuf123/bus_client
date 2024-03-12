@@ -17,14 +17,21 @@ import QuestionThree from './Routes/BusinessRegister/Questions/Question3/Questio
 import QuestionFour from './Routes/BusinessRegister/Questions/Question4/Questionfour';
 import DashBoard from './Routes/DashBoard/DashBoard';
 import BusinessActivity from './Components/DashBoard/BusinessOptions/BusinessActivity/BusinessActivity';
+import BusinessBusses from './Components/DashBoard/BusinessOptions/BusinessBuses/BusinessBuses';
+import QuestionOneBusRegistrey from './Components/BusinessRegister/BusRegistery/QuestionOne/Questions';
+import QuestionTwoBusRegistery from './Components/BusinessRegister/BusRegistery/QuestionTwo/Question';
+import QuestionThreeBusRegistery from './Components/BusinessRegister/BusRegistery/QuestionThree/Question';
 
 function App() {
   const router=createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Root></Root>}>
       <Route index element={<Home></Home>}></Route>
       <Route path='/register' element={<Register></Register>}></Route>
-      <Route path='/register/business' element={<BusinessRegisterHome></BusinessRegisterHome>}>
-        <Route index element={<QuestionOne></QuestionOne>}></Route>
+      <Route path='/register/:type' element={<BusinessRegisterHome></BusinessRegisterHome>}>
+        <Route path='questionOneBus' element={<QuestionOneBusRegistrey></QuestionOneBusRegistrey>}></Route>
+        <Route path='questionTwoBus' element={<QuestionTwoBusRegistery></QuestionTwoBusRegistery>}></Route>
+        <Route path='questionThreeBus' element={<QuestionThreeBusRegistery></QuestionThreeBusRegistery>}></Route>
+        <Route  path='questionTwoBusiness' element={<QuestionOne></QuestionOne>}></Route>
         <Route path='questionTwo' element={<QuestionTwo></QuestionTwo>}></Route>
       
       </Route>
@@ -34,9 +41,8 @@ function App() {
         <Route path='images' element={<BusImages></BusImages>}></Route>
       </Route>
       <Route path='/dashboard' element={<DashBoard></DashBoard>}>
-        <Route path='businessActivity' element={<BusinessActivity></BusinessActivity>}>
-          
-        </Route>
+        <Route path='businessActivity' element={<BusinessActivity></BusinessActivity>}></Route>
+        <Route path='buses' element={<BusinessBusses></BusinessBusses>}></Route>
       </Route>
       <Route path='/seatBook/seatSelection/:id' element={<SeatBook></SeatBook>}></Route>
       <Route path='/seatBook/passengerDetails' element={<PassengerSeatBook></PassengerSeatBook>}></Route>

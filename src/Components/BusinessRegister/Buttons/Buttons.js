@@ -5,18 +5,18 @@ import style from './button.module.css'
 import { increment } from "../BusinessProgressBarSlice/BusinessRegisterBarSlice"
 import { useEffect } from "react"
 export default function ButtonProgressBusinessRegister(){
-    const dispatch=useDispatch()
+     const dispatch=useDispatch()
     const nextUrl=useSelector((state)=>state.businessRegisterProgressButtonUrl)
-    const nav=useNavigate()
-    useEffect()
+     const nav=useNavigate()
+    
     return(
         <div className={style.main}>
             <button onClick={()=>{
-                nav(-1)
+               nav(-1)
             }}>Back</button>
             <button onClick={()=>{
                 dispatch(increment(40))
-                nav(nextUrl)
+               nav(nextUrl)
             }}>Next</button>
         </div>
     )

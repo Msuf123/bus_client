@@ -1,0 +1,21 @@
+.main{
+    background-color: blue;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    font-size: 18px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+
+}
+.text{
+    position: relative;
+    top:1px;
+}
+.add{
+    margin: 0px 0px 0px 7px;
+    font-size: 28px;
+}

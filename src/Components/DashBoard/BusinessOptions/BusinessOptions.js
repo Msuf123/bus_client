@@ -5,7 +5,7 @@ export default function BusinessOptionsDashBoardOptions(){
         <div className={style.main}>
             <div className={style.options}>
              <NavLink>Activity</NavLink>
-            <NavLink>Buses</NavLink>
+            <NavLink to={'buses'}>Buses</NavLink>
             <NavLink>Drivers</NavLink>
             <NavLink>Transactions</NavLink>
             <NavLink>Manage Account</NavLink>

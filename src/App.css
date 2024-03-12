@@ -1,9 +1,17 @@
 :root{
   --box-shadow-color:rgba(8, 8, 8, 0.158);
+  --light-box-shadow-color:rgba(8, 8, 8, 0.048);
   --button-color:rgb(131, 131, 231);
     --button-text-color:rgb(78, 78, 219);
     --red-button-border:1px solid red;
     --red-button-color:red;
+}
+/* AIzaSyC_-C7KmQYIJ96UfUYyay1CQgMCnwOGFko */
+a{
+  text-decoration: none; 
+}
+a:visited{
+  color: none;
 }
 .App {
   text-align: center;
